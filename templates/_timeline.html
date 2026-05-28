@@ -1,0 +1,14 @@
+{% if items %}
+<ul class="timeline">
+  {% for it in items %}
+  <li class="{{ it.css }}">
+    <span class="ts">{{ it.ts }}</span>
+    <span class="ev">{{ it.label }}</span>
+    {% if it.loc %}<span class="loc"> &middot; {{ it.loc }}</span>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="muted">No events yet.</p>
+{% endif %}
+{% include "_mql_embed.html" %}

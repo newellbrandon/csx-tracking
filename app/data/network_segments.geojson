@@ -1,0 +1,201 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "segment_id": "FLA-NJ",
+        "name": "Florida to NJ Coastal",
+        "endpoints": ["JAX", "SEL"],
+        "waypoints": [
+          {"name": "Jacksonville",  "yard_code": "JAX"},
+          {"name": "Savannah",      "yard_code": null},
+          {"name": "Florence",      "yard_code": null},
+          {"name": "Richmond",      "yard_code": null},
+          {"name": "Baltimore",     "yard_code": null},
+          {"name": "Selkirk",       "yard_code": "SEL"}
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-81.6557, 30.3322],
+          [-81.0912, 32.0809],
+          [-79.7626, 34.1955],
+          [-79.6948, 34.8849],
+          [-77.4360, 37.5407],
+          [-76.6122, 39.2904],
+          [-74.0263, 40.7937],
+          [-73.9298, 42.5895]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "segment_id": "CHI-FLA",
+        "name": "Chicago to Florida",
+        "endpoints": ["BRR", "JAX"],
+        "waypoints": [
+          {"name": "Barr",          "yard_code": "BRR"},
+          {"name": "Avon",          "yard_code": "AVN"},
+          {"name": "Louisville",    "yard_code": null},
+          {"name": "Nashville",     "yard_code": "NAS"},
+          {"name": "Atlanta",       "yard_code": "ATL"},
+          {"name": "Waycross",      "yard_code": "WCS"},
+          {"name": "Jacksonville",  "yard_code": "JAX"}
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-87.5839, 41.6328],
+          [-86.3978, 39.7626],
+          [-85.7585, 38.2527],
+          [-86.7613, 36.1085],
+          [-84.4153, 33.7679],
+          [-82.3540, 31.2107],
+          [-81.6557, 30.3322]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "segment_id": "CUM-SEL",
+        "name": "Cumberland to Selkirk",
+        "endpoints": ["CUM", "SEL"],
+        "waypoints": [
+          {"name": "Cumberland", "yard_code": "CUM"},
+          {"name": "Hagerstown", "yard_code": null},
+          {"name": "Harrisburg", "yard_code": null},
+          {"name": "Selkirk",    "yard_code": "SEL"}
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-78.7625, 39.6529],
+          [-77.7200, 39.6418],
+          [-76.8867, 40.2732],
+          [-73.9298, 42.5895]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "segment_id": "CLE-CIN",
+        "name": "Cleveland to Cincinnati",
+        "endpoints": ["WIL", "CIN"],
+        "waypoints": [
+          {"name": "Willard",    "yard_code": "WIL"},
+          {"name": "Akron",      "yard_code": null},
+          {"name": "Columbus",   "yard_code": null},
+          {"name": "Cincinnati", "yard_code": "CIN"}
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.7269, 41.0578],
+          [-81.5190, 41.0814],
+          [-82.9988, 39.9612],
+          [-84.5263, 39.1042]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "segment_id": "NOL-ATL",
+        "name": "New Orleans to Atlanta",
+        "endpoints": ["NOL", "ATL"],
+        "waypoints": [
+          {"name": "New Orleans","yard_code": "NOL"},
+          {"name": "Mobile",     "yard_code": null},
+          {"name": "Montgomery", "yard_code": null},
+          {"name": "Atlanta",    "yard_code": "ATL"}
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-90.0398, 30.0173],
+          [-88.0399, 30.6954],
+          [-86.3077, 32.3792],
+          [-84.4153, 33.7679]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "segment_id": "ATL-CHS",
+        "name": "Atlanta to Charleston",
+        "endpoints": ["ATL", "HMT"],
+        "waypoints": [
+          {"name": "Atlanta",    "yard_code": "ATL"},
+          {"name": "Augusta",    "yard_code": null},
+          {"name": "Hamlet",     "yard_code": "HMT"},
+          {"name": "Charleston", "yard_code": null}
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-84.4153, 33.7679],
+          [-81.9748, 33.4735],
+          [-79.6948, 34.8849],
+          [-79.9311, 32.7765]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "segment_id": "CIN-DTW",
+        "name": "Cincinnati to Detroit",
+        "endpoints": ["CIN", "WIL"],
+        "waypoints": [
+          {"name": "Cincinnati", "yard_code": "CIN"},
+          {"name": "Toledo",     "yard_code": null},
+          {"name": "Detroit",    "yard_code": null},
+          {"name": "Willard",    "yard_code": "WIL"}
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-84.5263, 39.1042],
+          [-83.5379, 41.6528],
+          [-83.1763, 42.3144],
+          [-82.7269, 41.0578]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "segment_id": "CUM-PIT",
+        "name": "Cumberland to Pittsburgh",
+        "endpoints": ["CUM", "WIL"],
+        "waypoints": [
+          {"name": "Cumberland",   "yard_code": "CUM"},
+          {"name": "Connellsville","yard_code": null},
+          {"name": "Pittsburgh",   "yard_code": null},
+          {"name": "Willard",      "yard_code": "WIL"}
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-78.7625, 39.6529],
+          [-79.5917, 40.0167],
+          [-79.9959, 40.4406],
+          [-82.7269, 41.0578]
+        ]
+      }
+    }
+  ]
+}

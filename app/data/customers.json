@@ -1,0 +1,12 @@
+[
+  {"code": "BASF",  "name": "BASF Corporation",                "type": "chemical",  "hq": {"type": "Point", "coordinates": [-74.4438, 40.6440]}},
+  {"code": "TYSN",  "name": "Tyson Foods, Inc.",               "type": "agriculture","hq": {"type": "Point", "coordinates": [-94.1283, 36.1867]}},
+  {"code": "HYUN",  "name": "Hyundai Motor Manufacturing",     "type": "automotive","hq": {"type": "Point", "coordinates": [-86.3077, 32.3792]}},
+  {"code": "BCM",   "name": "Black Crown Mining",              "type": "energy",    "hq": {"type": "Point", "coordinates": [-82.0157, 37.8487]}},
+  {"code": "CARG",  "name": "Cargill, Incorporated",           "type": "agriculture","hq": {"type": "Point", "coordinates": [-93.3088, 44.8830]}},
+  {"code": "IP",    "name": "International Paper Company",     "type": "forest",    "hq": {"type": "Point", "coordinates": [-89.9711, 35.1495]}},
+  {"code": "FORD",  "name": "Ford Motor Company",              "type": "automotive","hq": {"type": "Point", "coordinates": [-83.1763, 42.3144]}},
+  {"code": "DOMT",  "name": "Domtar Corporation",              "type": "forest",    "hq": {"type": "Point", "coordinates": [-80.8431, 35.2271]}},
+  {"code": "TOYO",  "name": "Toyota Motor North America",      "type": "automotive","hq": {"type": "Point", "coordinates": [-86.7816, 36.1627]}},
+  {"code": "WSTR",  "name": "WestRock Company",                "type": "forest",    "hq": {"type": "Point", "coordinates": [-84.3880, 33.7490]}}
+]

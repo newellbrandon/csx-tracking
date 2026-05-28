@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% block title %}Network Pulse · CSX Demo{% endblock %}
+{% block head %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+{% endblock %}
+{% block content %}
+<div class="csx-grid-pulse">
+  <div class="kpi-row">
+    <div class="kpi">
+      <div class="label">Trains in motion</div>
+      <div class="value" id="kpi-trains">—</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Cars in motion</div>
+      <div class="value" id="kpi-cars">—</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Active waybills</div>
+      <div class="value" id="kpi-bills">—</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Avg velocity</div>
+      <div class="value"><span id="kpi-vel">—</span><span class="unit">km/h</span></div>
+    </div>
+  </div>
+
+  <div class="pulse-row">
+    <div class="card">
+      <div class="card-header"><span>Cars per Yard</span><span class="pill">at_yard</span></div>
+      <div class="card-body">
+        <div class="chart-box"><canvas id="chart-yards"></canvas></div>
+        <p class="muted" style="font-size:11px">
+          Aggregation: <code>$match status:'at_yard'</code> &rarr;
+          <code>$group _id:'$current_yard_code'</code> &rarr;
+          <code>$lookup yards</code>
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><span>Top commodities in motion</span></div>
+      <div class="card-body">
+        <div class="tbl-wrap"><table class="tbl">
+          <thead><tr><th>Commodity</th><th class="num">Cars</th><th class="num">Hazmat</th></tr></thead>
+          <tbody id="tbl-commodities"><tr><td colspan="3" class="muted">Loading&hellip;</td></tr></tbody>
+        </table></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pulse-row">
+    <div class="card">
+      <div class="card-header"><span>Dwell-time leaders</span><span class="pill">events</span></div>
+      <div class="card-body">
+        <div class="tbl-wrap"><table class="tbl">
+          <thead><tr><th>Yard</th><th>City</th><th class="num">Avg (min)</th><th class="num">Max (min)</th><th class="num">Samples</th></tr></thead>
+          <tbody id="tbl-dwell"><tr><td colspan="5" class="muted">Loading&hellip;</td></tr></tbody>
+        </table></div>
+        <p class="muted" style="font-size:11px">
+          AEI arrival/departure pairs from the events time-series, reduced per <code>(equipment_id, yard_code)</code>.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><span>Train velocity (2h window)</span></div>
+      <div class="card-body">
+        <div class="tbl-wrap"><table class="tbl">
+          <thead><tr><th>Train</th><th class="num">Samples</th><th class="num">Distance (km)</th><th class="num">km/h</th></tr></thead>
+          <tbody id="tbl-velocity"><tr><td colspan="4" class="muted">Loading&hellip;</td></tr></tbody>
+        </table></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mt-3">
+    <div class="card-header"><span>Underlying MQL</span><span class="pill">Aggregation pipelines</span></div>
+    <div class="card-body" id="pulse-mql-root">
+      <p class="muted">Loading query definitions&hellip;</p>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}<script src="/static/js/pulse.js"></script>{% endblock %}

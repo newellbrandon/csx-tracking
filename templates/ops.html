@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %}Operations · CSX Demo{% endblock %}
+{% block content %}
+<div class="csx-grid-ops">
+  <div class="card">
+    <div class="card-header"><span>Filters</span></div>
+    <div class="card-body">
+      <form id="ops-form" class="flex-col gap-2">
+        <div class="form-row">
+          <label for="yard_code">Center on yard</label>
+          <select name="yard_code" id="yard_code"></select>
+        </div>
+        <div class="form-row">
+          <label for="miles">Radius (miles)</label>
+          <input type="number" min="10" max="500" step="10" name="miles" id="miles" value="80" />
+        </div>
+        <div class="form-row">
+          <label for="car_type">Car type</label>
+          <select name="car_type" id="car_type">
+            <option value="">Any</option>
+            <option value="tank">Tank</option>
+            <option value="hopper">Hopper (open)</option>
+            <option value="covered_hopper">Covered hopper</option>
+            <option value="boxcar">Boxcar</option>
+            <option value="autorack">Autorack</option>
+            <option value="well_car">Intermodal well car</option>
+            <option value="gondola">Gondola</option>
+            <option value="centerbeam">Centerbeam</option>
+            <option value="flat">Flat</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="commodity_class">Commodity class</label>
+          <select name="commodity_class" id="commodity_class">
+            <option value="">Any</option>
+            <option value="chemical">Chemical</option>
+            <option value="coal">Coal</option>
+            <option value="grain">Grain</option>
+            <option value="paper">Paper / forest</option>
+            <option value="automotive">Automotive</option>
+            <option value="intermodal">Intermodal</option>
+            <option value="petrochemical">Petrochemical</option>
+            <option value="consumer">Consumer</option>
+            <option value="steel">Steel</option>
+            <option value="lumber">Lumber</option>
+            <option value="machinery">Machinery</option>
+            <option value="food_grade">Food-grade</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="hazmat">Hazmat</label>
+          <select name="hazmat" id="hazmat">
+            <option value="">Any</option>
+            <option value="true">Hazmat only</option>
+            <option value="false">Non-haz only</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Run $geoNear</button>
+        <button type="button" id="run-at-yard" class="btn btn-secondary btn-block">Or: cars at selected yard</button>
+        <p class="muted mt-2" style="font-size:12px">Powered by a 2dsphere index on <code>trains.current_position</code> with a <code>$lookup</code> chain into shipments and railcars.</p>
+      </form>
+    </div>
+  </div>
+
+  <div class="flex-col gap-3">
+    <div class="card">
+      <div class="card-header"><span>Network</span><span class="pill" id="ops-summary">Ready</span></div>
+      <div id="ops-map"></div>
+    </div>
+    <div class="card">
+      <div class="card-header"><span>Results</span><span class="htmx-indicator">running&hellip;</span></div>
+      <div class="card-body" id="ops-results">
+        <p class="muted">Run a query to see matching cars.</p>
+      </div>
+    </div>
+    <div id="ops-mql-root"></div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}<script src="/static/js/ops.js"></script>{% endblock %}

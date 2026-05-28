@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}CSX Tracking Demo · MongoDB{% endblock %}
+{% block content %}
+<section class="hero">
+  <h1>Move the freight. Find the car. Measure the network.</h1>
+  <p>
+    A MongoDB-powered demo of CSX shipment tracking, geospatial operations,
+    and network analytics. Built on a local MongoDB Atlas Local container with
+    time-series telemetry, 2dsphere geospatial indexes, and the aggregation framework.
+  </p>
+  <div class="cta-row">
+    <a href="/track" class="btn btn-gold">Track a Shipment</a>
+    <a href="/ops" class="btn btn-secondary" style="background:transparent;color:white;border-color:rgba(255,255,255,0.6)">Operations</a>
+    <a href="/pulse" class="btn btn-secondary" style="background:transparent;color:white;border-color:rgba(255,255,255,0.6)">Network Pulse</a>
+  </div>
+</section>
+
+<div class="feature-grid">
+  <div class="feature">
+    <div class="badge">Customer</div>
+    <h3>Track Your Shipment</h3>
+    <p class="muted">Enter a waybill or equipment ID. Map shows the railcar's train and route, with a status timeline of yard, enroute, and industry events streamed from the time-series collection.</p>
+  </div>
+  <div class="feature">
+    <div class="badge">Operations</div>
+    <h3>Geospatial Inventory</h3>
+    <p class="muted">"Hazmat tank cars within 50 miles of Waycross." A 2dsphere-indexed <code>$geoNear</code> pipeline filters the live train set and draws results on the network map.</p>
+  </div>
+  <div class="feature">
+    <div class="badge">Analytics</div>
+    <h3>Network Pulse</h3>
+    <p class="muted">Cars-per-yard, top commodities in motion, dwell-time leaders, and average train velocity &mdash; all powered by aggregation pipelines over the events time-series collection.</p>
+  </div>
+</div>
+{% endblock %}

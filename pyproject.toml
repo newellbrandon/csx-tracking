@@ -1,0 +1,23 @@
+[project]
+name = "csx-demo"
+version = "0.1.0"
+description = "CSX Tracking + Ops + Network Pulse demo on MongoDB"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.32.0",
+    "motor>=3.6.0",
+    "pymongo>=4.10.0",
+    "jinja2>=3.1.4",
+    "python-multipart>=0.0.12",
+    "pydantic>=2.9.0",
+    "pydantic-settings>=2.6.0",
+    "python-dotenv>=1.0.1",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["app", "app.routes"]

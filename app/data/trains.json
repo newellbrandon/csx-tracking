@@ -1,0 +1,112 @@
+[
+  {
+    "symbol": "Q037",
+    "description": "Chicago to Jacksonville Intermodal",
+    "origin_yard": "BRR",
+    "destination_yard": "JAX",
+    "route_segment_id": "CHI-FLA",
+    "direction": "forward",
+    "progress": 0.18,
+    "status": "in_transit",
+    "consist": ["DTTX620501", "DTTX620502", "DTTX620503", "DTTX620504", "TTAX160212"]
+  },
+  {
+    "symbol": "Q132",
+    "description": "New Orleans to Atlanta Intermodal",
+    "origin_yard": "NOL",
+    "destination_yard": "ATL",
+    "route_segment_id": "NOL-ATL",
+    "direction": "forward",
+    "progress": 0.62,
+    "status": "in_transit",
+    "consist": ["TTAX160213"]
+  },
+  {
+    "symbol": "M664",
+    "description": "Nashville to Selkirk Manifest",
+    "origin_yard": "NAS",
+    "destination_yard": "SEL",
+    "route_segment_id": "CHI-FLA",
+    "direction": "reverse",
+    "progress": 0.45,
+    "status": "in_transit",
+    "consist": ["CSXT600101", "CSXT600102", "CSXT600106", "CSXT490301", "CSXT820712"]
+  },
+  {
+    "symbol": "S524",
+    "description": "Logan Coal Loadout to Newport News Pier",
+    "origin_yard": "CUM",
+    "destination_yard": "SEL",
+    "route_segment_id": "CUM-SEL",
+    "direction": "forward",
+    "progress": 0.35,
+    "status": "in_transit",
+    "consist": ["CSXT741201", "CSXT741202", "CSXT741203", "CSXT741204", "CSXT741205"]
+  },
+  {
+    "symbol": "I026",
+    "description": "Avon to North Bergen Intermodal",
+    "origin_yard": "AVN",
+    "destination_yard": "SEL",
+    "route_segment_id": "FLA-NJ",
+    "direction": "forward",
+    "progress": 0.55,
+    "status": "in_transit",
+    "consist": ["DTTX620504", "TTAX160214"]
+  },
+  {
+    "symbol": "Q200",
+    "description": "Atlanta to Selkirk Intermodal",
+    "origin_yard": "ATL",
+    "destination_yard": "SEL",
+    "route_segment_id": "FLA-NJ",
+    "direction": "forward",
+    "progress": 0.28,
+    "status": "in_transit",
+    "consist": ["TTGX980201", "TTGX980202", "TTGX980203"]
+  },
+  {
+    "symbol": "M408",
+    "description": "Avon to Cumberland Manifest",
+    "origin_yard": "AVN",
+    "destination_yard": "CUM",
+    "route_segment_id": "CHI-FLA",
+    "direction": "reverse",
+    "progress": 0.10,
+    "status": "in_transit",
+    "consist": ["CSXT600104", "CSXT600105", "ACFX18402", "ACFX18403", "CSXT299011"]
+  },
+  {
+    "symbol": "B406",
+    "description": "Mobile to Cincinnati Bulk",
+    "origin_yard": "NOL",
+    "destination_yard": "ATL",
+    "route_segment_id": "NOL-ATL",
+    "direction": "forward",
+    "progress": 0.78,
+    "status": "in_transit",
+    "consist": ["GATX85401", "GATX85402", "GATX85403", "TILX320088", "PROX55012"]
+  },
+  {
+    "symbol": "L702",
+    "description": "Hamlet Local",
+    "origin_yard": "HMT",
+    "destination_yard": "HMT",
+    "route_segment_id": "ATL-CHS",
+    "direction": "forward",
+    "progress": 0.5,
+    "status": "at_yard",
+    "consist": ["CSXT600103", "ACFX18404"]
+  },
+  {
+    "symbol": "Q022",
+    "description": "Florida to NJ Intermodal Express",
+    "origin_yard": "JAX",
+    "destination_yard": "SEL",
+    "route_segment_id": "FLA-NJ",
+    "direction": "forward",
+    "progress": 0.08,
+    "status": "in_transit",
+    "consist": ["ETTX900446", "ETTX900447", "CSXT600107"]
+  }
+]

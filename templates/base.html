@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% block title %}CSX Tracking Demo{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="/static/css/app.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css" />
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <header class="csx-header">
+    <div class="csx-header-inner">
+      <a class="csx-wordmark" href="/">CSX</a>
+      <nav class="csx-nav">
+        <a href="/track" class="{% if active == 'track' %}active{% endif %}">Track</a>
+        <a href="/ops" class="{% if active == 'ops' %}active{% endif %}">Operations</a>
+        <a href="/pulse" class="{% if active == 'pulse' %}active{% endif %}">Pulse</a>
+      </nav>
+      <button type="button" class="csx-tag csx-tag-btn" id="demo-reset"
+              title="Reset demo data in MongoDB and replay traces from the start">
+        MongoDB Demo
+      </button>
+    </div>
+  </header>
+  <main class="csx-main">
+    {% block content %}{% endblock %}
+  </main>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/javascript.min.js"></script>
+  <script src="/static/js/mql.js"></script>
+  <script src="/static/js/demo-reset.js"></script>
+  <script>
+    document.body.addEventListener("htmx:afterSwap", (e) => {
+      if (window.csxMql) csxMql.initEmbeds(e.detail.target);
+    });
+  </script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

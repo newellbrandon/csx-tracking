@@ -1,0 +1,15 @@
+[
+  {"code": "BASF-GSM",  "customer_code": "BASF",  "name": "BASF Geismar Complex",         "city": "Geismar",       "state": "LA", "location": {"type": "Point", "coordinates": [-91.0276, 30.2143]}, "served_by_yard": "NOL"},
+  {"code": "TYSN-NSH",  "customer_code": "TYSN",  "name": "Tyson Nashville Plant",        "city": "Nashville",     "state": "TN", "location": {"type": "Point", "coordinates": [-86.7613, 36.1085]}, "served_by_yard": "NAS"},
+  {"code": "TYSN-CMM",  "customer_code": "TYSN",  "name": "Tyson Cumming Cold Storage",   "city": "Cumming",       "state": "GA", "location": {"type": "Point", "coordinates": [-84.1402, 34.2073]}, "served_by_yard": "ATL"},
+  {"code": "HYUN-MGM",  "customer_code": "HYUN",  "name": "HMMA Montgomery Plant",        "city": "Montgomery",    "state": "AL", "location": {"type": "Point", "coordinates": [-86.3077, 32.3792]}, "served_by_yard": "ATL"},
+  {"code": "BCM-LGN",   "customer_code": "BCM",   "name": "Logan Coal Loadout",           "city": "Logan",         "state": "WV", "location": {"type": "Point", "coordinates": [-82.0157, 37.8487]}, "served_by_yard": "CUM"},
+  {"code": "BCM-MNG",   "customer_code": "BCM",   "name": "Mingo Coal Loadout",           "city": "Williamson",    "state": "WV", "location": {"type": "Point", "coordinates": [-82.2776, 37.6743]}, "served_by_yard": "CUM"},
+  {"code": "CARG-CIN",  "customer_code": "CARG",  "name": "Cargill Cincinnati Elevator",  "city": "Cincinnati",    "state": "OH", "location": {"type": "Point", "coordinates": [-84.5063, 39.1142]}, "served_by_yard": "CIN"},
+  {"code": "CARG-TOL",  "customer_code": "CARG",  "name": "Cargill Toledo Elevator",      "city": "Toledo",        "state": "OH", "location": {"type": "Point", "coordinates": [-83.5379, 41.6528]}, "served_by_yard": "WIL"},
+  {"code": "IP-VBG",    "customer_code": "IP",    "name": "IP Vicksburg Mill",            "city": "Vicksburg",     "state": "MS", "location": {"type": "Point", "coordinates": [-90.8779, 32.3526]}, "served_by_yard": "NOL"},
+  {"code": "FORD-LVL",  "customer_code": "FORD",  "name": "Ford Louisville KTP",          "city": "Louisville",    "state": "KY", "location": {"type": "Point", "coordinates": [-85.7585, 38.2527]}, "served_by_yard": "CIN"},
+  {"code": "DOMT-HVL",  "customer_code": "DOMT",  "name": "Domtar Hartsville Mill",       "city": "Hartsville",    "state": "SC", "location": {"type": "Point", "coordinates": [-80.0731, 34.3737]}, "served_by_yard": "HMT"},
+  {"code": "TOYO-PCN",  "customer_code": "TOYO",  "name": "Toyota Princeton Plant",       "city": "Princeton",     "state": "IN", "location": {"type": "Point", "coordinates": [-87.5670, 38.3553]}, "served_by_yard": "AVN"},
+  {"code": "WSTR-ATL",  "customer_code": "WSTR",  "name": "WestRock Atlanta Mill",        "city": "Atlanta",       "state": "GA", "location": {"type": "Point", "coordinates": [-84.3880, 33.7490]}, "served_by_yard": "ATL"}
+]

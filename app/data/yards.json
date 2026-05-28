@@ -1,0 +1,14 @@
+[
+  {"code": "JAX", "name": "Jacksonville", "city": "Jacksonville", "state": "FL", "location": {"type": "Point", "coordinates": [-81.6557, 30.3322]}, "capacity_tracks": 32, "role": "Intermodal & classification"},
+  {"code": "WCS", "name": "Waycross Rice Yard", "city": "Waycross", "state": "GA", "location": {"type": "Point", "coordinates": [-82.3540, 31.2107]}, "capacity_tracks": 56, "role": "Hump classification"},
+  {"code": "HMT", "name": "Hamlet", "city": "Hamlet", "state": "NC", "location": {"type": "Point", "coordinates": [-79.6948, 34.8849]}, "capacity_tracks": 38, "role": "Classification"},
+  {"code": "SEL", "name": "Selkirk", "city": "Selkirk", "state": "NY", "location": {"type": "Point", "coordinates": [-73.9298, 42.5895]}, "capacity_tracks": 44, "role": "Hump classification"},
+  {"code": "CUM", "name": "Cumberland", "city": "Cumberland", "state": "MD", "location": {"type": "Point", "coordinates": [-78.7625, 39.6529]}, "capacity_tracks": 40, "role": "Coal & classification"},
+  {"code": "AVN", "name": "Avon", "city": "Indianapolis", "state": "IN", "location": {"type": "Point", "coordinates": [-86.3978, 39.7626]}, "capacity_tracks": 36, "role": "Classification"},
+  {"code": "WIL", "name": "Willard", "city": "Willard", "state": "OH", "location": {"type": "Point", "coordinates": [-82.7269, 41.0578]}, "capacity_tracks": 30, "role": "Classification"},
+  {"code": "BRR", "name": "Barr", "city": "Riverdale", "state": "IL", "location": {"type": "Point", "coordinates": [-87.5839, 41.6328]}, "capacity_tracks": 28, "role": "Gateway & interchange"},
+  {"code": "NAS", "name": "Radnor", "city": "Nashville", "state": "TN", "location": {"type": "Point", "coordinates": [-86.7613, 36.1085]}, "capacity_tracks": 26, "role": "Classification"},
+  {"code": "NOL", "name": "Gentilly", "city": "New Orleans", "state": "LA", "location": {"type": "Point", "coordinates": [-90.0398, 30.0173]}, "capacity_tracks": 22, "role": "Gateway"},
+  {"code": "CIN", "name": "Queensgate", "city": "Cincinnati", "state": "OH", "location": {"type": "Point", "coordinates": [-84.5263, 39.1042]}, "capacity_tracks": 34, "role": "Classification"},
+  {"code": "ATL", "name": "Tilford", "city": "Atlanta", "state": "GA", "location": {"type": "Point", "coordinates": [-84.4153, 33.7679]}, "capacity_tracks": 30, "role": "Classification"}
+]

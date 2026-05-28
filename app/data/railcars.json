@@ -1,0 +1,62 @@
+[
+  {"equipment_id": "CSXT600101", "reporting_mark": "CSXT", "car_type": "boxcar",     "loaded": true,  "hazmat": false, "capacity_tons": 100, "commodity_class": "paper"},
+  {"equipment_id": "CSXT600102", "reporting_mark": "CSXT", "car_type": "boxcar",     "loaded": true,  "hazmat": false, "capacity_tons": 100, "commodity_class": "paper"},
+  {"equipment_id": "CSXT600103", "reporting_mark": "CSXT", "car_type": "boxcar",     "loaded": false, "hazmat": false, "capacity_tons": 100, "commodity_class": "general"},
+  {"equipment_id": "CSXT600104", "reporting_mark": "CSXT", "car_type": "boxcar",     "loaded": true,  "hazmat": false, "capacity_tons": 100, "commodity_class": "consumer"},
+  {"equipment_id": "CSXT600105", "reporting_mark": "CSXT", "car_type": "boxcar",     "loaded": true,  "hazmat": false, "capacity_tons": 100, "commodity_class": "consumer"},
+
+  {"equipment_id": "GATX85401",  "reporting_mark": "GATX", "car_type": "tank",       "loaded": true,  "hazmat": true,  "capacity_tons":  90, "commodity_class": "chemical"},
+  {"equipment_id": "GATX85402",  "reporting_mark": "GATX", "car_type": "tank",       "loaded": true,  "hazmat": true,  "capacity_tons":  90, "commodity_class": "chemical"},
+  {"equipment_id": "GATX85403",  "reporting_mark": "GATX", "car_type": "tank",       "loaded": true,  "hazmat": true,  "capacity_tons":  90, "commodity_class": "chemical"},
+  {"equipment_id": "TILX320088", "reporting_mark": "TILX", "car_type": "tank",       "loaded": true,  "hazmat": true,  "capacity_tons":  90, "commodity_class": "chemical"},
+  {"equipment_id": "TILX320089", "reporting_mark": "TILX", "car_type": "tank",       "loaded": false, "hazmat": false, "capacity_tons":  90, "commodity_class": "chemical"},
+  {"equipment_id": "PROX55012",  "reporting_mark": "PROX", "car_type": "tank",       "loaded": true,  "hazmat": true,  "capacity_tons":  90, "commodity_class": "chemical"},
+
+  {"equipment_id": "CSXT741201", "reporting_mark": "CSXT", "car_type": "hopper",     "loaded": true,  "hazmat": false, "capacity_tons": 120, "commodity_class": "coal"},
+  {"equipment_id": "CSXT741202", "reporting_mark": "CSXT", "car_type": "hopper",     "loaded": true,  "hazmat": false, "capacity_tons": 120, "commodity_class": "coal"},
+  {"equipment_id": "CSXT741203", "reporting_mark": "CSXT", "car_type": "hopper",     "loaded": true,  "hazmat": false, "capacity_tons": 120, "commodity_class": "coal"},
+  {"equipment_id": "CSXT741204", "reporting_mark": "CSXT", "car_type": "hopper",     "loaded": true,  "hazmat": false, "capacity_tons": 120, "commodity_class": "coal"},
+  {"equipment_id": "CSXT741205", "reporting_mark": "CSXT", "car_type": "hopper",     "loaded": true,  "hazmat": false, "capacity_tons": 120, "commodity_class": "coal"},
+  {"equipment_id": "CSXT741206", "reporting_mark": "CSXT", "car_type": "hopper",     "loaded": false, "hazmat": false, "capacity_tons": 120, "commodity_class": "coal"},
+  {"equipment_id": "CSXT741207", "reporting_mark": "CSXT", "car_type": "hopper",     "loaded": false, "hazmat": false, "capacity_tons": 120, "commodity_class": "coal"},
+
+  {"equipment_id": "ACFX18402",  "reporting_mark": "ACFX", "car_type": "covered_hopper","loaded": true, "hazmat": false, "capacity_tons": 100, "commodity_class": "grain"},
+  {"equipment_id": "ACFX18403",  "reporting_mark": "ACFX", "car_type": "covered_hopper","loaded": true, "hazmat": false, "capacity_tons": 100, "commodity_class": "grain"},
+  {"equipment_id": "ACFX18404",  "reporting_mark": "ACFX", "car_type": "covered_hopper","loaded": true, "hazmat": false, "capacity_tons": 100, "commodity_class": "grain"},
+  {"equipment_id": "ACFX18405",  "reporting_mark": "ACFX", "car_type": "covered_hopper","loaded": true, "hazmat": false, "capacity_tons": 100, "commodity_class": "grain"},
+  {"equipment_id": "CSXT299011", "reporting_mark": "CSXT", "car_type": "covered_hopper","loaded": true, "hazmat": false, "capacity_tons": 100, "commodity_class": "grain"},
+  {"equipment_id": "CSXT299012", "reporting_mark": "CSXT", "car_type": "covered_hopper","loaded": false,"hazmat": false, "capacity_tons": 100, "commodity_class": "grain"},
+
+  {"equipment_id": "TTGX980201", "reporting_mark": "TTGX", "car_type": "autorack",   "loaded": true,  "hazmat": false, "capacity_tons":  90, "commodity_class": "automotive"},
+  {"equipment_id": "TTGX980202", "reporting_mark": "TTGX", "car_type": "autorack",   "loaded": true,  "hazmat": false, "capacity_tons":  90, "commodity_class": "automotive"},
+  {"equipment_id": "TTGX980203", "reporting_mark": "TTGX", "car_type": "autorack",   "loaded": true,  "hazmat": false, "capacity_tons":  90, "commodity_class": "automotive"},
+  {"equipment_id": "ETTX900445", "reporting_mark": "ETTX", "car_type": "autorack",   "loaded": false, "hazmat": false, "capacity_tons":  90, "commodity_class": "automotive"},
+  {"equipment_id": "ETTX900446", "reporting_mark": "ETTX", "car_type": "autorack",   "loaded": true,  "hazmat": false, "capacity_tons":  90, "commodity_class": "automotive"},
+  {"equipment_id": "ETTX900447", "reporting_mark": "ETTX", "car_type": "autorack",   "loaded": true,  "hazmat": false, "capacity_tons":  90, "commodity_class": "automotive"},
+
+  {"equipment_id": "DTTX620501", "reporting_mark": "DTTX", "car_type": "well_car",   "loaded": true,  "hazmat": false, "capacity_tons": 110, "commodity_class": "intermodal"},
+  {"equipment_id": "DTTX620502", "reporting_mark": "DTTX", "car_type": "well_car",   "loaded": true,  "hazmat": false, "capacity_tons": 110, "commodity_class": "intermodal"},
+  {"equipment_id": "DTTX620503", "reporting_mark": "DTTX", "car_type": "well_car",   "loaded": true,  "hazmat": false, "capacity_tons": 110, "commodity_class": "intermodal"},
+  {"equipment_id": "DTTX620504", "reporting_mark": "DTTX", "car_type": "well_car",   "loaded": true,  "hazmat": false, "capacity_tons": 110, "commodity_class": "intermodal"},
+  {"equipment_id": "TTAX160212", "reporting_mark": "TTAX", "car_type": "well_car",   "loaded": true,  "hazmat": false, "capacity_tons": 110, "commodity_class": "intermodal"},
+  {"equipment_id": "TTAX160213", "reporting_mark": "TTAX", "car_type": "well_car",   "loaded": true,  "hazmat": false, "capacity_tons": 110, "commodity_class": "intermodal"},
+  {"equipment_id": "TTAX160214", "reporting_mark": "TTAX", "car_type": "well_car",   "loaded": false, "hazmat": false, "capacity_tons": 110, "commodity_class": "intermodal"},
+
+  {"equipment_id": "CSXT490301", "reporting_mark": "CSXT", "car_type": "centerbeam", "loaded": true,  "hazmat": false, "capacity_tons":  95, "commodity_class": "lumber"},
+  {"equipment_id": "CSXT490302", "reporting_mark": "CSXT", "car_type": "centerbeam", "loaded": true,  "hazmat": false, "capacity_tons":  95, "commodity_class": "lumber"},
+  {"equipment_id": "CSXT490303", "reporting_mark": "CSXT", "car_type": "centerbeam", "loaded": false, "hazmat": false, "capacity_tons":  95, "commodity_class": "lumber"},
+
+  {"equipment_id": "CSXT820712", "reporting_mark": "CSXT", "car_type": "gondola",    "loaded": true,  "hazmat": false, "capacity_tons": 100, "commodity_class": "steel"},
+  {"equipment_id": "CSXT820713", "reporting_mark": "CSXT", "car_type": "gondola",    "loaded": true,  "hazmat": false, "capacity_tons": 100, "commodity_class": "steel"},
+  {"equipment_id": "CSXT820714", "reporting_mark": "CSXT", "car_type": "gondola",    "loaded": false, "hazmat": false, "capacity_tons": 100, "commodity_class": "steel"},
+
+  {"equipment_id": "CSXT130501", "reporting_mark": "CSXT", "car_type": "flat",       "loaded": true,  "hazmat": false, "capacity_tons":  85, "commodity_class": "machinery"},
+  {"equipment_id": "CSXT130502", "reporting_mark": "CSXT", "car_type": "flat",       "loaded": true,  "hazmat": false, "capacity_tons":  85, "commodity_class": "machinery"},
+
+  {"equipment_id": "UTLX410055", "reporting_mark": "UTLX", "car_type": "tank",       "loaded": true,  "hazmat": false, "capacity_tons":  90, "commodity_class": "food_grade"},
+  {"equipment_id": "UTLX410056", "reporting_mark": "UTLX", "car_type": "tank",       "loaded": false, "hazmat": false, "capacity_tons":  90, "commodity_class": "food_grade"},
+  {"equipment_id": "GATX85501",  "reporting_mark": "GATX", "car_type": "tank",       "loaded": true,  "hazmat": true,  "capacity_tons":  90, "commodity_class": "petrochemical"},
+  {"equipment_id": "GATX85502",  "reporting_mark": "GATX", "car_type": "tank",       "loaded": true,  "hazmat": true,  "capacity_tons":  90, "commodity_class": "petrochemical"},
+  {"equipment_id": "CSXT600106", "reporting_mark": "CSXT", "car_type": "boxcar",     "loaded": true,  "hazmat": false, "capacity_tons": 100, "commodity_class": "consumer"},
+  {"equipment_id": "CSXT600107", "reporting_mark": "CSXT", "car_type": "boxcar",     "loaded": true,  "hazmat": false, "capacity_tons": 100, "commodity_class": "consumer"}
+]

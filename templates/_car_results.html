@@ -1,0 +1,31 @@
+{% if rows %}
+<div class="tbl-wrap">
+  <table class="tbl">
+    <thead>
+      <tr>
+        <th>Waybill</th><th>Equip</th><th>Type</th><th>Commodity</th><th>Train</th><th>Shipper</th><th>Consignee</th>
+        {% if miles %}<th class="num">Mi</th>{% endif %}
+        <th>Haz</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for r in rows %}
+      <tr>
+        <td class="mono">{{ r.waybill_number }}</td>
+        <td class="mono">{{ r.equipment_id }}</td>
+        <td>{{ r.car_type }}</td>
+        <td>{{ r.commodity }}</td>
+        <td class="mono">{{ r.train_symbol or '—' }}</td>
+        <td>{{ r.shipper }}</td>
+        <td>{{ r.consignee }}</td>
+        {% if miles %}<td class="num">{{ '%.1f' % r.distance_miles }}</td>{% endif %}
+        <td>{% if r.hazmat %}<span class="chip chip-late">Haz</span>{% else %}<span class="chip chip-info">—</span>{% endif %}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% else %}
+<p class="muted">No cars matched.</p>
+{% endif %}
+{% include "_mql_embed.html" %}

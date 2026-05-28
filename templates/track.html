@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block title %}Track Shipment · CSX Demo{% endblock %}
+{% block content %}
+<div class="card mb-3">
+  <div class="card-header"><span>Trace by Waybill or Equipment ID</span><span class="pill">Demo</span></div>
+  <div class="card-body">
+    <form method="get" action="/track" class="flex gap-2">
+      <input type="text" name="id" value="{{ ident }}"
+             placeholder="e.g. WB-100023 or CSXT741201"
+             autocomplete="off" autofocus
+             style="flex:1" />
+      <button class="btn btn-primary" type="submit">Trace</button>
+    </form>
+    {% if ident and not found %}
+      <p class="mt-2" style="color:var(--status-late)">No shipment found for <code>{{ ident }}</code>.</p>
+      <p class="muted mt-2">Try one of:
+        <a href="/track?id=WB-100023" class="trace-example">WB-100023</a>
+        <a href="/track?id=WB-100001" class="trace-example">WB-100001</a>
+        <a href="/track?id=CSXT741201" class="trace-example">CSXT741201</a>
+        <a href="/track?id=GATX85401" class="trace-example">GATX85401</a>
+      </p>
+    {% elif not ident %}
+      <p class="muted mt-2">Try one of:
+        <a href="/track?id=WB-100023" class="trace-example">WB-100023</a>
+        <a href="/track?id=WB-100001" class="trace-example">WB-100001</a>
+        <a href="/track?id=CSXT741201" class="trace-example">CSXT741201</a>
+        <a href="/track?id=GATX85401" class="trace-example">GATX85401</a>
+      </p>
+    {% endif %}
+  </div>
+</div>
+
+{% if found %}
+<div class="csx-grid-tracking" id="trace-grid" data-waybill="{{ ident }}">
+  <div class="card">
+    <div class="card-header"><span>Shipment Map</span><span class="pill" id="train-status">Loading</span></div>
+    <div id="map"></div>
+  </div>
+
+  <div class="flex-col gap-3">
+    <div class="card">
+      <div class="card-header"><span>Shipment</span></div>
+      <div class="card-body" id="ship-info"><p class="muted">Loading shipment&hellip;</p></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span>Status Timeline</span>
+        <span class="htmx-indicator">refreshing&hellip;</span>
+      </div>
+      <div class="card-body" id="timeline"
+           hx-get="/api/timeline?waybill={{ ident }}"
+           hx-trigger="load, every 5s"
+           hx-swap="innerHTML">
+        <p class="muted">Loading events&hellip;</p>
+      </div>
+    </div>
+
+    <div id="track-mql-root"></div>
+  </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+{% if found %}
+<script src="/static/js/track.js"></script>
+{% endif %}
+{% endblock %}
