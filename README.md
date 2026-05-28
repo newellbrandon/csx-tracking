@@ -30,26 +30,37 @@ MongoDB is the only state at runtime.
 ## Requirements
 
 - Python 3.11+ (3.13 tested)
-- A MongoDB at the URI in `.env` (e.g. an `mongodb/mongodb-atlas-local`
-  container running on `localhost:27017`).
+- MongoDB Atlas CLI (`atlas`) — [install docs](https://www.mongodb.com/docs/atlas/cli/stable/install-atlas-cli/)
+- Atlas Local on `localhost:27017` (via Atlas CLI, or Docker as a fallback)
 
-If you don't already have one:
+If you don't already have Atlas Local running:
+
+**Recommended — Atlas CLI**
+
+```bash
+atlas local setup mongodb-atlas --port 27017 --username dbuser --password donotpass --connectWith connectionString --force
+```
+
+Use the matching URI in `.env` (see Environment below).
+
+**Alternative — Docker**
 
 ```bash
 docker run -d --name csx-mongo \
   -p 27017:27017 \
-  -e MONGODB_INITDB_ROOT_USERNAME=admin \
-  -e MONGODB_INITDB_ROOT_PASSWORD=YOUR_PASSWORD \
+  -e MONGODB_INITDB_ROOT_USERNAME=dbuser \
+  -e MONGODB_INITDB_ROOT_PASSWORD=donotpass \
   mongodb/mongodb-atlas-local:latest
 ```
 
 ## Environment
 
 Only `MONGODB_URI` is required. Defaults are baked in for everything else;
-see [.env.example](.env.example).
+see [.env.example](.env.example). This matches the Atlas CLI setup above
+(and the Docker fallback).
 
 ```
-MONGODB_URI=mongodb://admin:YOUR_PASSWORD@localhost:27017/?authSource=admin&directConnection=true
+MONGODB_URI=mongodb://dbuser:donotpass@localhost:27017/?authSource=admin&directConnection=true
 # CSX_DEMO_DB=csx_demo
 # API_HOST=0.0.0.0
 # API_PORT=8088
